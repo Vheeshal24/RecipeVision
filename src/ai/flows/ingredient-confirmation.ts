@@ -40,7 +40,8 @@ const prompt = ai.definePrompt({
   Analyze the provided image and extract a list of potential ingredients. Return the ingredients as a JSON array of strings.
 
   Image: {{media url=photoDataUri}}
-  `,config: {
+  `,
+  config: {
     safetySettings: [
       {
         category: 'HARM_CATEGORY_HATE_SPEECH',
